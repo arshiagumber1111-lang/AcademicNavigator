@@ -1,0 +1,398 @@
+/* ===============================
+   GENERAL
+   =============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+}
+
+
+/* ===============================
+   HEADER
+   =============================== */
+
+header {
+    background-color: #2563eb;
+    color: white;
+    padding: 22px 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+
+/* ===============================
+   HERO
+   =============================== */
+
+.hero {
+    text-align: center;
+    padding: 70px 20px 50px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* ===============================
+   SEARCH
+   =============================== */
+
+.search-box {
+    margin: 35px auto 20px;
+}
+
+.search-box input {
+    width: 500px;
+    max-width: 90%;
+    padding: 17px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.search-box input:focus {
+    border-color: #2563eb;
+}
+
+
+/* ===============================
+   SEARCH RESULTS
+   =============================== */
+
+#searchResults {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.search-result-card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
+    text-align: left;
+}
+
+.search-result-card:hover {
+    transform: translateY(-3px);
+}
+
+.search-result-card h3 {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.search-result-card p {
+    color: #555;
+}
+
+.no-result {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+
+/* ===============================
+   DOMAINS
+   =============================== */
+
+.domains {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.domains h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.section-description {
+    color: #666;
+}
+
+
+/* ===============================
+   DOMAIN CARDS
+   =============================== */
+
+.domain-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.domain-card {
+    background-color: white;
+    width: 180px;
+    padding: 28px 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.domain-card:hover {
+    transform: translateY(-8px);
+}
+
+.card-icon {
+    font-size: 40px;
+}
+
+.domain-card h3 {
+    margin-bottom: 8px;
+}
+
+.domain-card p {
+    color: #666;
+}
+
+
+/* ===============================
+   FEATURES
+   =============================== */
+
+.features {
+    text-align: center;
+    padding: 60px 30px;
+    background-color: white;
+}
+
+.features h2 {
+    font-size: 30px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.feature-card {
+    width: 230px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: #f4f7fb;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* ===============================
+   SUBJECT PAGES
+   =============================== */
+
+.subject-page {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.subject-page h1 {
+    font-size: 36px;
+}
+
+.subject-page > p {
+    font-size: 18px;
+    color: #555;
+}
+
+.subject-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.subject-card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+}
+
+.subject-card h2 {
+    margin-top: 0;
+}
+
+.subject-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+
+/* ===============================
+   LEARNING CONTENT
+   =============================== */
+
+.learning-content {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.learning-content h2 {
+    color: #2563eb;
+    margin-top: 30px;
+}
+
+.learning-content p,
+.learning-content li {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ===============================
+   TREE
+   =============================== */
+
+.tree-example {
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f4f7fb;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.tree-level {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.tree-lines {
+    font-size: 25px;
+}
+
+.tree-node {
+    width: 45px;
+    height: 45px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+/* ===============================
+   QUIZ
+   =============================== */
+
+.quiz-box {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.quiz-box button {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-box button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #1f2937;
+    color: white;
+}
+
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .domain-card {
+        width: 80%;
+    }
+
+    .subject-card {
+        width: 85%;
+    }
+
+    .learning-content {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+}

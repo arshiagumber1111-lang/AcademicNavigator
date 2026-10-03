@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Academic Navigator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 Academic Navigator</h1>
+    </header>
+
+    <section class="hero">
+
+        <h2>Learn Smarter. From One Place.</h2>
+
+        <p>
+            Explore concepts through books, videos, AI explanations
+            and practice.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔎 What do you want to learn?"
+                onkeyup="searchTopic()"
+            >
+
+        </div>
+
+        <div id="searchResults"></div>
+
+    </section>
+
+
+    <section class="domains">
+
+        <h2>Explore Domains</h2>
+
+        <p class="section-description">
+            Choose a subject and start learning
+        </p>
+
+        <div class="domain-container">
+
+            <div class="domain-card" onclick="openCSE()">
+                <div class="card-icon">💻</div>
+                <h3>CSE</h3>
+                <p>Computer Science</p>
+            </div>
+
+
+            <div class="domain-card">
+                <div class="card-icon">🤖</div>
+                <h3>AI / ML</h3>
+                <p>Artificial Intelligence</p>
+            </div>
+
+
+            <div class="domain-card">
+                <div class="card-icon">🔐</div>
+                <h3>Cyber Security</h3>
+                <p>Security & Networking</p>
+            </div>
+
+
+            <div class="domain-card">
+                <div class="card-icon">📐</div>
+                <h3>Mathematics</h3>
+                <p>Mathematical Concepts</p>
+            </div>
+
+
+            <div class="domain-card">
+                <div class="card-icon">📊</div>
+                <h3>Economics</h3>
+                <p>Economic Studies</p>
+            </div>
+
+
+            <div class="domain-card">
+                <div class="card-icon">⚛️</div>
+                <h3>Physics</h3>
+                <p>Physics & Science</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="features">
+
+        <h2>Why Academic Navigator?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <h3>📚 Learn from Books</h3>
+                <p>
+                    Find concepts organized chapter-wise
+                    and topic-wise.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎥 Learn from Videos</h3>
+                <p>
+                    Discover relevant educational videos
+                    for the same concept.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🤖 AI Assistance</h3>
+                <p>
+                    Get difficult concepts explained
+                    in simple language.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📝 Practice</h3>
+                <p>
+                    Test your understanding with
+                    topic-based quizzes.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            📚 Academic Navigator
+        </p>
+
+        <p>
+            One Concept. Every Way to Learn.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
