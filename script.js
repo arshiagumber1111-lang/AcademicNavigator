@@ -220,28 +220,51 @@ function openBinaryTree() {
 
             <div class="subject-container">
 
-                <!-- READ -->
-                <div class="subject-card" onclick="openBinaryTreeRead()">
+                <div class="subject-card"
+                     onclick="openBinaryTreeRead()">
+
                     <h2>📖 Read</h2>
-                    <p>Understand the concept of Binary Trees</p>
+
+                    <p>
+                        Understand the concept of Binary Trees
+                    </p>
+
                 </div>
 
-                <!-- YOUTUBE -->
-                <div class="subject-card" onclick="openBinaryTreeYouTube()">
+
+                <div class="subject-card"
+                     onclick="openBinaryTreeYouTube()">
+
                     <h2>🎥 YouTube</h2>
-                    <p>Find educational videos</p>
+
+                    <p>
+                        Find educational videos
+                    </p>
+
                 </div>
 
-                <!-- AI -->
-                <div class="subject-card" onclick="openAIExplain()">
+
+                <div class="subject-card"
+                     onclick="openAIExplain()">
+
                     <h2>🤖 AI Explain</h2>
-                    <p>Get a simple explanation</p>
+
+                    <p>
+                        Get a simple explanation
+                    </p>
+
                 </div>
 
-                <!-- QUIZ -->
-                <div class="subject-card" onclick="openBinaryTreeQuiz()">
+
+                <div class="subject-card"
+                     onclick="openBinaryTreeQuiz()">
+
                     <h2>📝 Quiz</h2>
-                    <p>Test your understanding</p>
+
+                    <p>
+                        Test your understanding
+                    </p>
+
                 </div>
 
             </div>
@@ -281,9 +304,13 @@ function openBinaryTreeRead() {
                 </p>
 
                 <ul>
+
                     <li>One left child</li>
+
                     <li>One right child</li>
+
                     <li>Or no children</li>
+
                 </ul>
 
 
@@ -301,7 +328,11 @@ function openBinaryTreeRead() {
 
 
                     <div class="tree-lines">
-                        ↙️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↘️
+
+                        ↙️
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        ↘️
+
                     </div>
 
 
@@ -319,9 +350,11 @@ function openBinaryTreeRead() {
 
 
                     <div class="tree-lines">
+
                         ↙️ &nbsp;&nbsp; ↘️
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         ↙️ &nbsp;&nbsp; ↘️
+
                     </div>
 
 
@@ -392,10 +425,21 @@ function openBinaryTreeRead() {
 
                 <ul>
 
-                    <li>Searching and sorting</li>
-                    <li>Expression trees</li>
-                    <li>File system representation</li>
-                    <li>Hierarchical data representation</li>
+                    <li>
+                        Searching and sorting
+                    </li>
+
+                    <li>
+                        Expression trees
+                    </li>
+
+                    <li>
+                        File system representation
+                    </li>
+
+                    <li>
+                        Hierarchical data representation
+                    </li>
 
                 </ul>
 
@@ -438,38 +482,36 @@ function openAIExplain() {
                 <h2>Binary Tree in Simple Words</h2>
 
                 <p>
+
                     Imagine a family tree.
+
                     One person can have two children.
+
                     Similarly, in a Binary Tree,
                     every node can have at most two children.
+
                 </p>
+
 
                 <h2>🌳 Example</h2>
 
                 <p>
-
                     If 10 is the root:
-
                 </p>
 
                 <p>
-
-                    10 → 5 and 15
-
+                    <b>10 → 5 and 15</b>
                 </p>
 
                 <p>
-
                     Then 5 and 15 are children of 10.
-
                 </p>
+
 
                 <h2>🧠 Remember</h2>
 
                 <p>
-
-                    Binary = Two
-
+                    <b>Binary = Two</b>
                 </p>
 
                 <p>
@@ -502,30 +544,35 @@ function openBinaryTreeQuiz() {
 
             <div class="quiz-box">
 
-                <h2>
-                    Question 1
-                </h2>
+                <h2>Question 1</h2>
 
                 <p>
+
                     How many children can a node have
                     at maximum in a Binary Tree?
+
                 </p>
+
 
                 <button onclick="checkAnswer(1)">
                     1
                 </button>
 
+
                 <button onclick="checkAnswer(2)">
                     2
                 </button>
+
 
                 <button onclick="checkAnswer(3)">
                     3
                 </button>
 
+
                 <button onclick="checkAnswer(4)">
                     4
                 </button>
+
 
                 <p id="quiz-result"></p>
 
@@ -543,19 +590,26 @@ function openBinaryTreeQuiz() {
 
 function checkAnswer(answer) {
 
-    const result = document.getElementById("quiz-result");
+    const result =
+        document.getElementById("quiz-result");
+
 
     if (answer === 2) {
 
-        result.innerHTML = "✅ Correct! A Binary Tree node can have at most 2 children.";
+        result.innerHTML =
+            "✅ Correct! A Binary Tree node can have at most 2 children.";
 
-    } else {
+    }
 
-        result.innerHTML = "❌ Incorrect. Try again!";
+    else {
+
+        result.innerHTML =
+            "❌ Incorrect. Try again!";
 
     }
 
 }
+
 
 // =====================================================
 // SEARCH
@@ -563,16 +617,38 @@ function checkAnswer(answer) {
 
 function searchTopic() {
 
-    const input = document.getElementById("searchInput");
+    const input =
+        document.getElementById("searchInput");
 
-    const results = document.getElementById("searchResults");
+    const results =
+        document.getElementById("searchResults");
 
-    const query = input.value.toLowerCase().trim();
 
-    if (query === "") {
-        results.innerHTML = "";
+    // Search elements only exist on homepage.
+    if (!input || !results) {
+
         return;
+
     }
+
+
+    const query =
+        input.value.toLowerCase().trim();
+
+
+    // Empty search
+    if (query === "") {
+
+        results.innerHTML = "";
+
+        return;
+
+    }
+
+
+    // =================================================
+    // BINARY TREE
+    // =================================================
 
     if (
         query.includes("binary tree") ||
@@ -581,8 +657,7 @@ function searchTopic() {
 
         results.innerHTML = `
 
-            <div class="search-result-card"
-                 onclick="openCSE(); setTimeout(openDSA, 100);">
+            <div class="search-result-card">
 
                 <h3>🌱 Binary Tree</h3>
 
@@ -590,21 +665,168 @@ function searchTopic() {
                     CSE → Data Structures → Trees → Binary Tree
                 </p>
 
+                <button
+                    onclick="openBinaryTree()">
+
+                    Explore Topic →
+
+                </button>
+
             </div>
 
         `;
 
+        return;
+
     }
 
-    else if (
+
+    // =================================================
+    // BINARY SEARCH TREE
+    // =================================================
+
+    if (
+        query.includes("binary search tree") ||
+        query === "bst"
+    ) {
+
+        results.innerHTML = `
+
+            <div class="search-result-card">
+
+                <h3>🔍 Binary Search Tree</h3>
+
+                <p>
+                    CSE → Data Structures → Trees → BST
+                </p>
+
+                <small>
+                    Topic content coming soon.
+                </small>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    // =================================================
+    // AVL TREE
+    // =================================================
+
+    if (
+        query.includes("avl") ||
+        query.includes("avl tree")
+    ) {
+
+        results.innerHTML = `
+
+            <div class="search-result-card">
+
+                <h3>⚖️ AVL Tree</h3>
+
+                <p>
+                    CSE → Data Structures → Trees → AVL Tree
+                </p>
+
+                <small>
+                    Topic content coming soon.
+                </small>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    // =================================================
+    // HEAP
+    // =================================================
+
+    if (
+        query.includes("heap") ||
+        query.includes("min heap") ||
+        query.includes("max heap")
+    ) {
+
+        results.innerHTML = `
+
+            <div class="search-result-card">
+
+                <h3>🏔️ Heap</h3>
+
+                <p>
+                    CSE → Data Structures → Trees → Heap
+                </p>
+
+                <small>
+                    Topic content coming soon.
+                </small>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    // =================================================
+    // TREES
+    // =================================================
+
+    if (
+        query === "tree" ||
+        query === "trees" ||
+        query.includes("tree data structure")
+    ) {
+
+        results.innerHTML = `
+
+            <div class="search-result-card">
+
+                <h3>🌳 Trees</h3>
+
+                <p>
+                    CSE → Data Structures → Trees
+                </p>
+
+                <button
+                    onclick="openTrees()">
+
+                    Explore Topic →
+
+                </button>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    // =================================================
+    // DATA STRUCTURES
+    // =================================================
+
+    if (
         query.includes("data structure") ||
+        query.includes("data structures") ||
         query.includes("dsa")
     ) {
 
         results.innerHTML = `
 
-            <div class="search-result-card"
-                 onclick="openDSA()">
+            <div class="search-result-card">
 
                 <h3>📚 Data Structures</h3>
 
@@ -612,13 +834,27 @@ function searchTopic() {
                     CSE → Data Structures
                 </p>
 
+                <button
+                    onclick="openDSA()">
+
+                    Explore Subject →
+
+                </button>
+
             </div>
 
         `;
 
+        return;
+
     }
 
-    else if (
+
+    // =================================================
+    // DBMS
+    // =================================================
+
+    if (
         query.includes("dbms") ||
         query.includes("database")
     ) {
@@ -634,18 +870,26 @@ function searchTopic() {
                 </p>
 
                 <small>
-                    More content coming soon
+                    More content coming soon.
                 </small>
 
             </div>
 
         `;
 
+        return;
+
     }
 
-    else if (
+
+    // =================================================
+    // CYBER SECURITY
+    // =================================================
+
+    if (
         query.includes("cyber") ||
-        query.includes("cyber security")
+        query.includes("cyber security") ||
+        query.includes("cybersecurity")
     ) {
 
         results.innerHTML = `
@@ -658,31 +902,93 @@ function searchTopic() {
                     Security & Networking
                 </p>
 
+                <small>
+                    More content coming soon.
+                </small>
+
             </div>
 
         `;
 
+        return;
+
     }
 
-    else {
+
+    // =================================================
+    // AI / MACHINE LEARNING
+    // =================================================
+
+    if (
+        query.includes("ai") ||
+        query.includes("artificial intelligence") ||
+        query.includes("machine learning") ||
+        query.includes("ml")
+    ) {
 
         results.innerHTML = `
 
-            <div class="no-result">
+            <div class="search-result-card">
 
-                ❌ No topic found.
+                <h3>🤖 AI / ML</h3>
 
-                <br>
+                <p>
+                    Artificial Intelligence & Machine Learning
+                </p>
 
-                Try:
-                <b>Binary Tree</b>,
-                <b>Data Structures</b>,
-                <b>DBMS</b>
+                <small>
+                    More content coming soon.
+                </small>
 
             </div>
 
         `;
 
+        return;
+
     }
+
+
+    // =================================================
+    // NO RESULT
+    // =================================================
+
+    results.innerHTML = `
+
+        <div class="no-result">
+
+            ❌ No topic found.
+
+            <br><br>
+
+            Try searching:
+
+            <br><br>
+
+            <b>Binary Tree</b>
+
+            <br>
+
+            <b>Data Structures</b>
+
+            <br>
+
+            <b>DBMS</b>
+
+            <br>
+
+            <b>Cyber Security</b>
+
+            <br>
+
+            <b>AVL Tree</b>
+
+            <br>
+
+            <b>Heap</b>
+
+        </div>
+
+    `;
 
 }
