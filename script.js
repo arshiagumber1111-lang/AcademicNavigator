@@ -480,10 +480,13 @@ function openBinaryTreeRead() {
 
 function openBinaryTreeYouTube() {
 
-    window.open(
-        "https://www.youtube.com/results?search_query=Binary+Tree+Data+Structure",
-        "_blank"
-    );
+    const youtubeURL =
+        "https://www.youtube.com/results?search_query=" +
+        encodeURIComponent(
+            "Binary Tree Data Structure tutorial for beginners"
+        );
+
+    window.open(youtubeURL, "_blank");
 
 }
 
@@ -574,32 +577,25 @@ function openBinaryTreeQuiz() {
                 <h2>Question 1</h2>
 
                 <p>
-
                     How many children can a node have
                     at maximum in a Binary Tree?
-
                 </p>
 
-
-                <button onclick="checkAnswer(1)">
+                <button onclick="answerQuiz(2, 1)">
                     1
                 </button>
 
-
-                <button onclick="checkAnswer(2)">
+                <button onclick="answerQuiz(2, 2)">
                     2
                 </button>
 
-
-                <button onclick="checkAnswer(3)">
+                <button onclick="answerQuiz(2, 3)">
                     3
                 </button>
 
-
-                <button onclick="checkAnswer(4)">
+                <button onclick="answerQuiz(2, 4)">
                     4
                 </button>
-
 
                 <p id="quiz-result"></p>
 
@@ -608,6 +604,7 @@ function openBinaryTreeQuiz() {
         </div>
 
     `;
+
 }
 
 
@@ -620,15 +617,12 @@ function checkAnswer(answer) {
     const result =
         document.getElementById("quiz-result");
 
-
     if (answer === 2) {
 
         result.innerHTML =
             "✅ Correct! A Binary Tree node can have at most 2 children.";
 
-    }
-
-    else {
+    } else {
 
         result.innerHTML =
             "❌ Incorrect. Try again!";
@@ -1017,5 +1011,28 @@ function searchTopic() {
         </div>
 
     `;
+
+}
+
+// =====================================================
+// QUIZ ANSWER
+// =====================================================
+
+function answerQuiz(correctAnswer, selectedAnswer) {
+
+    const result =
+        document.getElementById("quiz-result");
+
+    if (selectedAnswer === correctAnswer) {
+
+        result.innerHTML =
+            "✅ Correct!";
+
+    } else {
+
+        result.innerHTML =
+            "❌ Incorrect. Try again!";
+
+    }
 
 }
