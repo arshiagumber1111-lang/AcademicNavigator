@@ -4,6 +4,17 @@
 
 
 // =====================================================
+// HOME
+// =====================================================
+
+function goHome() {
+
+    location.reload();
+
+}
+
+
+// =====================================================
 // CSE DOMAIN
 // =====================================================
 
@@ -12,6 +23,8 @@ function openCSE() {
     document.body.innerHTML = `
 
         <div class="subject-page">
+
+            <button onclick="goHome()">🏠 Home</button>
 
             <h1>💻 Computer Science</h1>
 
@@ -62,6 +75,8 @@ function openDSA() {
 
         <div class="subject-page">
 
+            <button onclick="goHome()">🏠 Home</button>
+
             <h1>📚 Data Structures</h1>
 
             <p>Choose a book to start learning</p>
@@ -100,6 +115,8 @@ function openDSABook() {
     document.body.innerHTML = `
 
         <div class="subject-page">
+
+            <button onclick="goHome()">🏠 Home</button>
 
             <h1>📖 Data Structures & Algorithms</h1>
 
@@ -165,6 +182,8 @@ function openTrees() {
 
         <div class="subject-page">
 
+            <button onclick="goHome()">🏠 Home</button>
+
             <h1>🌳 Trees</h1>
 
             <p>Choose a topic to start learning</p>
@@ -213,6 +232,8 @@ function openBinaryTree() {
     document.body.innerHTML = `
 
         <div class="subject-page">
+
+            <button onclick="goHome()">🏠 Home</button>
 
             <h1>🌱 Binary Tree</h1>
 
@@ -284,6 +305,8 @@ function openBinaryTreeRead() {
     document.body.innerHTML = `
 
         <div class="subject-page">
+
+            <button onclick="goHome()">🏠 Home</button>
 
             <h1>📖 Binary Tree</h1>
 
@@ -475,6 +498,8 @@ function openAIExplain() {
 
         <div class="subject-page">
 
+            <button onclick="goHome()">🏠 Home</button>
+
             <h1>🤖 AI Explanation</h1>
 
             <div class="learning-content">
@@ -539,6 +564,8 @@ function openBinaryTreeQuiz() {
     document.body.innerHTML = `
 
         <div class="subject-page">
+
+            <button onclick="goHome()">🏠 Home</button>
 
             <h1>📝 Binary Tree Quiz</h1>
 
